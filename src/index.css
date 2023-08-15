@@ -1,0 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css?family=Rammetto+One:regular,bold,italic&subset=latin,latin-ext');
+
+
+html{
+   background: #000000;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #141E24;
+ font-family: 'Rammetto One', sans-serif;
+
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
