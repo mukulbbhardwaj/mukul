@@ -2,11 +2,11 @@ import React from "react";
 import { Box, Text } from "@chakra-ui/react";
 
 import ProjectItem from "./ProjectItem";
-import { binary, mChat, monke } from "./projectData";
+import { binary, mChat, monke,gameroom } from "./projectData";
 import binaryLogo from "../../../assets/binaryDiary.png";
 import monkeLogo from "../../../assets/monkepod.png";
 import mchatLogo from "../../../assets/mChat.png";
-
+import gameLogo from '../../../assets/gameLogo.png';
 const Projects = () => {
   return (
     <Box background={"#141E24"} color={"#9FDBE9"} id="projects">
@@ -25,6 +25,13 @@ const Projects = () => {
           <Text>rk</Text>
         </Box>
         <Box display={"flex"} flexDir={"column"} gap={"1rem"}>
+          <ProjectItem
+            title={gameroom.title}
+            desc={gameroom.desc}
+            live={gameroom.live}
+            img={gameLogo}
+            tech={gameroom.tech}
+          />
           <ProjectItem
             title={binary.title}
             desc={binary.desc}

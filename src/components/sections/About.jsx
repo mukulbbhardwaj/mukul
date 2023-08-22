@@ -5,7 +5,7 @@ const About = () => {
   const resumeLink =
     "https://drive.google.com/file/d/1_GaM8fHMNrFqw0FhvxupZdtEuZ2a-Q_v/view";
   const aboutData =
-    "Hey there, I'm Mukul Bhardwaj , a fresh engineering graduate with an interest in programming and software development. Currently I do Frontend Web Devlopment and learning Backend ";
+    "Hey there, I'm Mukul Bhardwaj , a fresh engineering graduate with an interest in programming and software development. Currently I do Frontend Web Devlopment and learning Backend.";
   return (
     <Box background={"#141E24"} color={"#9FDBE9"} id="about">
       <Box
@@ -35,16 +35,22 @@ const About = () => {
             >
               {aboutData}
             </Text>
-            <Link href={resumeLink} margin={"1rem"} textDecor={'none'} target="_blank">
+            <Link
+              href={resumeLink}
+              margin={"1rem"}
+              textDecor={"none"}
+              target="_blank"
+              color={"#BAE7AA"}
+            >
               <Text
                 fontSize={"18px"}
                 border={"1px solid white"}
-                fontFamily={"PTSans"}
+                fontFamily={"PT Sans"}
                 width={"80px"}
                 padding={"4px"}
                 borderRadius={"xl"}
                 _hover={{ bgColor: "#1e2d36" }}
-                textDecor={'none'}
+                textDecor={"none"}
               >
                 Resume
               </Text>

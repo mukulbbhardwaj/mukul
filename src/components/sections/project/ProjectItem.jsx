@@ -38,9 +38,13 @@ const ProjectItem = ({ title, desc, img, tech, live, git }) => {
             <Link href={live} target="_blank">
               <Image width={"24px"} height={"24px"} src={linkLogo} />
             </Link>
-            <Link href={git} target="_blank">
-              <Image width={"24px"} height={"24px"} src={gitLogo} />
-            </Link>
+            {git ? (
+              <Link href={git} target="_blank">
+                <Image width={"24px"} height={"24px"} src={gitLogo} />
+              </Link>
+            ) : (
+              ""
+            )}
           </Box>
         </Box>
       </Box>
@@ -50,9 +54,11 @@ const ProjectItem = ({ title, desc, img, tech, live, git }) => {
         flexDir={"column"}
         width={{ base: "100%", lg: "400px" }}
       >
-        <Text fontSize={{ base: "24px", lg: "48px" }} fontWeight={600}>
-          {title}
-        </Text>
+        <Link href={live} target="_blank">
+          <Text fontSize={{ base: "24px", lg: "48px" }} fontWeight={600}>
+            {title}
+          </Text>
+        </Link>
         <Text>{desc}</Text>
         <Text marginTop={"8px"}>
           Tech:-
