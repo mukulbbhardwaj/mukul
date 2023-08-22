@@ -22,7 +22,7 @@ export const monke = {
 };
 
 export const gameroom = {
-  title: "GameRoom",
+  title: "Monke Play",
   desc: "Instantly dive into a world of fun with our mini game website, offering a collection of quick and addictive games for all ages!",
   live: "https://monkeplay.vercel.app/",
   git: "",
