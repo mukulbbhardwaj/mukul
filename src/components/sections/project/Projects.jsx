@@ -1,12 +1,12 @@
 import React from "react";
 import { Box, Text } from "@chakra-ui/react";
-
+import { Grid, GridItem } from "@chakra-ui/react";
 import ProjectItem from "./ProjectItem";
-import { binary, mChat, monke,gameroom } from "./projectData";
+import { binary, mChat, monke, gameroom } from "./projectData";
 import binaryLogo from "../../../assets/binaryDiary.png";
 import monkeLogo from "../../../assets/monkepod.png";
 import mchatLogo from "../../../assets/mChat.png";
-import gameLogo from '../../../assets/gameLogo.png';
+import gameLogo from "../../../assets/gameLogo.png";
 const Projects = () => {
   return (
     <Box background={"#141E24"} color={"#9FDBE9"} id="projects">
@@ -19,12 +19,16 @@ const Projects = () => {
           color={" #A2ABDD"}
           display={"flex"}
           padding={"4rem 0rem 2rem 0rem"}
+
         >
-          <Text>w</Text>
+          <Text>pr</Text>
           <Text color={"#BAE7AA"}>o</Text>
-          <Text>rk</Text>
+          <Text>jects</Text>
         </Box>
-        <Box display={"flex"} flexDir={"column"} gap={"1rem"}>
+        <Grid
+          gap={6}
+        templateColumns={{base:"repeat(1,1fr)" , lg:'repeat(2,1fr)'}}
+        >
           <ProjectItem
             title={gameroom.title}
             desc={gameroom.desc}
@@ -56,10 +60,8 @@ const Projects = () => {
             live={monke.live}
             img={monkeLogo}
           />
-        </Box>
-        {/* <Link to={"/"}>
-          <Button>back to navigation</Button>
-        </Link> */}
+        </Grid>
+        <Box display={"flex"} flexDir={"column"} gap={"1rem"}></Box>
       </Box>
     </Box>
   );

@@ -1,28 +1,58 @@
 import { Text, Box, Image, Tooltip } from "@chakra-ui/react";
 import React from "react";
-import "./nav.css";
-import aboutLogo from "../../assets/about.png";
-import projectLogo from "../../assets/project.png";
-import wrtingLogo from "../../assets/writing.png";
+
 const Nav = () => {
   return (
     <div>
-      <Box className="nav-container">
-        <Tooltip label="home" hasArrow placement="right">
-          <a href="#home">
-            <Image className="nav-logo" src={aboutLogo}></Image>
+      <Box
+        color={"white"}
+        display={"flex"}
+        justifyContent={"space-between"}
+        alignItems={"center"}
+        textAlign={"center"}
+        margin={{ base: "2rem", lg: "2rem 20rem 2rem 20rem" }}
+        fontFamily={"PT Sans"}
+      >
+        <Text
+          textAlign={"center"}
+          width={"100%"}
+          border={"1px solid gray"}
+          height={"50px"}
+          display={"flex"}
+          alignItems={"center"}
+          justifyContent={"center"}
+          borderLeftRadius={"14px"}
+          _hover={{ background: "#103c47" }}
+        >
+          <a href="#projects">Projects</a>
+        </Text>
+        <Text
+          textAlign={"center"}
+          width={"100%"}
+          border={"1px solid gray"}
+          height={"50px"}
+          display={"flex"}
+          alignItems={"center"}
+          justifyContent={"center"}
+          _hover={{ background: "#103c47" }}
+        >
+          <a href="#blogs">Blogs</a>
+        </Text>
+        <Text
+          textAlign={"center"}
+          width={"100%"}
+          border={"1px solid gray"}
+          height={"50px"}
+          display={"flex"}
+          alignItems={"center"}
+          justifyContent={"center"}
+          borderRightRadius={"14px"}
+          _hover={{ background: "#103c47" }}
+        >
+          <a href="https://drive.google.com/file/d/1_GaM8fHMNrFqw0FhvxupZdtEuZ2a-Q_v/view" target="_blank">
+            Resume
           </a>
-        </Tooltip>
-        <Tooltip label="projects" hasArrow placement="right">
-          <a href="#projects">
-            <Image className="nav-logo" src={projectLogo}></Image>
-          </a>
-        </Tooltip>
-        <Tooltip label="blogs" hasArrow placement="right">
-          <a href="#blogs">
-            <Image className="nav-logo" src={wrtingLogo}></Image>
-          </a>
-        </Tooltip>
+        </Text>
       </Box>
     </div>
   );

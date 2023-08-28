@@ -20,7 +20,7 @@ const Blogs = () => {
           <Text>gs</Text>
         </Box>
         <Box>
-          <BlogItem title={"coming soon..."} />
+          <BlogItem title={"coming soon..."} date={'07th Oct 2023'} />
         </Box>
       </Box>
     </Box>
