@@ -14,7 +14,7 @@ const ProjectItem = ({ title, desc, live, git }) => {
       justifyContent={"space-evenly"}
       fontFamily={"PT Sans"}
     >
-      <Link href={live} target="_blank" _hover={{ color: "white" }} aria-label="live project link">
+      <Link href={live} target="_blank" _hover={{ color: "white" }} aria-label={title}>
         <Text fontSize={{ base: "20px", lg: "32px" }} fontWeight={"bold"}>
           {title}
         </Text>
@@ -23,7 +23,7 @@ const ProjectItem = ({ title, desc, live, git }) => {
         {desc}
       </Text>
 
-      <Link href={git} target="_blank" _hover={{ color: "white" }} aria-label="github repo link">
+      <Link href={git} target="_blank" _hover={{ color: "white" }} aria-label="view on Github">
         <Text
           _hover={{ color: "white" }}
           fontWeight={"600"}
