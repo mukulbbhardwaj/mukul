@@ -35,6 +35,7 @@ const Projects = () => {
             live={gameroom.live}
             img={gameLogo}
             tech={gameroom.tech}
+git={gameroom.git}
           />
           <ProjectItem
             title={binary.title}
