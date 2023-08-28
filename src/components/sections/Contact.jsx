@@ -30,8 +30,9 @@ const Contact = () => {
             _hover={{ background: "#103c47" }}
             padding={"12px"}
             borderRadius={"50%"}
+            aria-label="github"
           >
-            <Image width={"32px"} height={"32px"} src={githubLogo}></Image>
+            <Image width={"32px"} height={"32px"} src={githubLogo} alt="github"></Image>
           </Link>
 
           <Link
@@ -40,8 +41,9 @@ const Contact = () => {
             _hover={{ background: "#103c47" }}
             padding={"12px"}
             borderRadius={"50%"}
+            aria-label="linkedin"
           >
-            <Image width={"32px"} height={"32px"} src={linkedinLogo}></Image>
+            <Image width={"32px"} height={"32px"} src={linkedinLogo} alt="linkedin"></Image>
           </Link>
 
           <Link
@@ -50,8 +52,9 @@ const Contact = () => {
             _hover={{ background: "#103c47" }}
             padding={"12px"}
             borderRadius={"50%"}
+            aria-label="twitter"
           >
-            <Image width={"32px"} height={"32px"} src={twitterLogo}></Image>
+            <Image width={"32px"} height={"32px"} src={twitterLogo} alt="twitter"></Image>
           </Link>
 
           <Link
@@ -60,8 +63,9 @@ const Contact = () => {
             _hover={{ background: "#103c47" }}
             padding={"12px"}
             borderRadius={"50%"}
+            aria-label="gmail"
           >
-            <Image width={"32px"} height={"32px"} src={gmailLogo}></Image>
+            <Image width={"32px"} height={"32px"} src={gmailLogo} alt="gmail"></Image>
           </Link>
         </Box>
       </Box>

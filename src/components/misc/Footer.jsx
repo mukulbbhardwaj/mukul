@@ -3,7 +3,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-      <Box color={'gray'} textAlign={'center'} padding={'4rem'} >
+      <Box color={'white'} textAlign={'center'} padding={'4rem'} >
       . . . 
 </Box>
   )
