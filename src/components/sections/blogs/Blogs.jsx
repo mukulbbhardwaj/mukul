@@ -1,7 +1,7 @@
 import { Box, Text } from "@chakra-ui/react";
 import React from "react";
 import BlogItem from "./BlogItem";
-
+import { blogs } from "./blogData";
 const Blogs = () => {
   return (
     <Box background={"#141E24"} color={"#9FDBE9"} id="blogs">
@@ -19,9 +19,17 @@ const Blogs = () => {
           <Text color={"#BAE7AA"}>o</Text>
           <Text>gs</Text>
         </Box>
-        <Box>
-          <BlogItem title={"coming soon..."} date={'07th Oct 2023'} />
-        </Box>
+        {blogs.map((blog, idx) => (
+          <Box>
+            {/* <Text fontSize={12} opacity={0.5}>{idx}</Text> */}
+            <BlogItem
+              key={idx}
+              title={idx + '.    ' + blog.title}
+              date={blog.date}
+              blogLink={blog.link}
+            />
+          </Box>
+        ))}
       </Box>
     </Box>
   );

@@ -25,6 +25,6 @@ export const gameroom = {
   title: "Monke Play",
   desc: "Instantly dive into a world of fun with our mini game website, offering a collection of quick and addictive games for all ages!",
   live: "https://monkeplay.vercel.app/",
-  git: "",
+  git: "https://github.com/mukulbbhardwaj/Monke-Play",
   tech: "JavaScript,Vite,ReactJs",
 };

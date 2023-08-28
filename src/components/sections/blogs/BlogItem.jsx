@@ -11,9 +11,10 @@ const BlogItem = ({ title, date, blogLink }) => {
       display={"flex"}
       justifyContent={"space-between"}
       alignItems={"center"}
+      margin={'1rem'}
     >
       <Link href={blogLink} target="_blank">
-        <Text fontSize={{ base: "20px", lg: "24px" }} fontWeight={400}>
+        <Text fontSize={{ base: "18px", lg: "20px" }} color={'white'} fontWeight={400}>
           {title}
         </Text>
       </Link>
