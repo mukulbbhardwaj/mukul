@@ -1,12 +1,9 @@
 import React from "react";
 import { Box, Text } from "@chakra-ui/react";
-import { Grid, GridItem } from "@chakra-ui/react";
+import { Grid } from "@chakra-ui/react";
 import ProjectItem from "./ProjectItem";
 import { binary, mChat, monke, gameroom } from "./projectData";
-import binaryLogo from "../../../assets/binaryDiary.png";
-import monkeLogo from "../../../assets/monkepod.png";
-import mchatLogo from "../../../assets/mChat.png";
-import gameLogo from "../../../assets/gameLogo.png";
+
 const Projects = () => {
   return (
     <Box background={"#141E24"} color={"#9FDBE9"} id="projects">
@@ -19,7 +16,6 @@ const Projects = () => {
           color={" #A2ABDD"}
           display={"flex"}
           padding={"4rem 0rem 2rem 0rem"}
-
         >
           <Text>pr</Text>
           <Text color={"#BAE7AA"}>o</Text>
@@ -27,22 +23,20 @@ const Projects = () => {
         </Box>
         <Grid
           gap={6}
-        templateColumns={{base:"repeat(1,1fr)" , lg:'repeat(2,1fr)'}}
+          templateColumns={{ base: "repeat(1,1fr)", lg: "repeat(2,1fr)" }}
         >
           <ProjectItem
             title={gameroom.title}
             desc={gameroom.desc}
             live={gameroom.live}
-            img={gameLogo}
             tech={gameroom.tech}
-git={gameroom.git}
+            git={gameroom.git}
           />
           <ProjectItem
             title={binary.title}
             desc={binary.desc}
             git={binary.git}
             live={binary.live}
-            img={binaryLogo}
             tech={binary.tech}
           />
           <ProjectItem
@@ -50,7 +44,6 @@ git={gameroom.git}
             desc={mChat.desc}
             git={mChat.git}
             live={mChat.live}
-            img={mchatLogo}
             tech={mChat.tech}
           />
           <ProjectItem
@@ -59,7 +52,6 @@ git={gameroom.git}
             desc={monke.desc}
             git={monke.git}
             live={monke.live}
-            img={monkeLogo}
           />
         </Grid>
         <Box display={"flex"} flexDir={"column"} gap={"1rem"}></Box>
