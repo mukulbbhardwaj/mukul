@@ -27,45 +27,65 @@ const Contact = () => {
           <Link
             href={github}
             target="_blank"
-            _hover={{ background: "#103c47" }}
+            _hover={{ background: "#103c47", transform: "scale(1.1, 1.1)" }}
             padding={"12px"}
             borderRadius={"50%"}
             aria-label="github"
           >
-            <Image width={"32px"} height={"32px"} src={githubLogo} alt="github"></Image>
+            <Image
+              width={"32px"}
+              height={"32px"}
+              src={githubLogo}
+              alt="github"
+            ></Image>
           </Link>
 
           <Link
             href={linkedin}
             target="_blank"
-            _hover={{ background: "#103c47" }}
+            _hover={{ background: "#103c47", transform: "scale(1.1, 1.1)" }}
             padding={"12px"}
             borderRadius={"50%"}
             aria-label="linkedin"
           >
-            <Image width={"32px"} height={"32px"} src={linkedinLogo} alt="linkedin"></Image>
+            <Image
+              width={"32px"}
+              height={"32px"}
+              src={linkedinLogo}
+              alt="linkedin"
+            ></Image>
           </Link>
 
           <Link
             href={twitter}
             target="_blank"
-            _hover={{ background: "#103c47" }}
+            _hover={{ background: "#103c47", transform: "scale(1.1, 1.1)" }}
             padding={"12px"}
             borderRadius={"50%"}
             aria-label="twitter"
           >
-            <Image width={"32px"} height={"32px"} src={twitterLogo} alt="twitter"></Image>
+            <Image
+              width={"32px"}
+              height={"32px"}
+              src={twitterLogo}
+              alt="twitter"
+            ></Image>
           </Link>
 
           <Link
             href={gmail}
             target="_blank"
-            _hover={{ background: "#103c47" }}
+            _hover={{ background: "#103c47", transform: "scale(1.1, 1.1)" }}
             padding={"12px"}
             borderRadius={"50%"}
             aria-label="gmail"
           >
-            <Image width={"32px"} height={"32px"} src={gmailLogo} alt="gmail"></Image>
+            <Image
+              width={"32px"}
+              height={"32px"}
+              src={gmailLogo}
+              alt="gmail"
+            ></Image>
           </Link>
         </Box>
       </Box>

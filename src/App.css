@@ -2,7 +2,7 @@
   background: #141e24;
 }
 .activeEle:hover{
-transform: translate(0px,-10px);
+transform: translate(0px,-4px);
 transition: transform 330ms ease-in-out;
 }
 
