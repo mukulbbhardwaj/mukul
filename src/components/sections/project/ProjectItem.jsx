@@ -5,7 +5,7 @@ const ProjectItem = ({ title, desc, live, git }) => {
   return (
     <Box
       display={"flex"}
-      bgColor={"#161f24"}
+      bgColor={"#212121"}
       border={"0.5px solid #252e33"}
       padding={"1rem"}
       borderRadius={"2rem"}

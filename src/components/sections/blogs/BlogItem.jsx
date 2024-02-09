@@ -1,24 +1,35 @@
 import React from "react";
-import { Box, Text, Image, Link } from "@chakra-ui/react";
+import { Box, Text,Link } from "@chakra-ui/react";
 
 const BlogItem = ({ title, date, blogLink }) => {
   return (
     <Box
-      bgColor={"#202229"}
-      padding={"1rem"}
-      borderRadius={"14px"}
-      fontFamily={"PT Sans"}
       display={"flex"}
+      border={"0.5px solid #252e33"}
+      padding={"1rem"}
+      borderRadius={"2rem"}
+      gap={"1rem"}
       justifyContent={"space-between"}
       alignItems={"center"}
-      margin={'1rem'}
+      fontFamily={"PT Sans"}
+      className="activeEle"
+      _hover={{ borderColor: "white" }}
     >
-      <Link href={blogLink} target="_blank">
-        <Text fontSize={{ base: "18px", lg: "20px" }} color={'white'} fontWeight={400}>
-          {title}
-        </Text>
+      <Link
+        href={blogLink}
+        target="_blank"
+        _hover={{ color: "white" }}
+        aria-label={title}
+        display={"flex"}
+        alignItems={"center"}
+        fontSize={{ base: "20px", lg: "18px" }}
+        fontWeight={"bold"}
+      >
+        {title}
       </Link>
-      <Text fontSize={"14px"}>{date}</Text>
+      <Text fontSize={"12px"} color={"white"}>
+        {date}
+      </Text>
     </Box>
   );
 };

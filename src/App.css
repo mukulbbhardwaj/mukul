@@ -1,5 +1,6 @@
 .App {
-  background: #141e24;
+  background: #1a1a1a;
+  color: #9FDBE9;
 }
 .activeEle:hover{
 transform: translate(0px,-4px);

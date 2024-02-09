@@ -1,12 +1,12 @@
 import React from "react";
-import { Box, Text, theme } from "@chakra-ui/react";
+import { Box} from "@chakra-ui/react";
 
 const Home = () => {
   return (
     <Box
       color={"#9FDBE9"}
-      fontSize={{ base: "48px", lg: "100px" }}
-      background={"#141E24"}
+      fontSize={{ base: "32px", lg: "48px" }}
+      // background={"#1a1a1a"}
       display={"flex"}
       flexDir={"column"}
       id="home"

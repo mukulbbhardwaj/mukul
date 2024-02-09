@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Text, Button, Image, Link } from "@chakra-ui/react";
+import { Box,Image, Link } from "@chakra-ui/react";
 import githubLogo from "../../assets/github.png";
 import gmailLogo from "../../assets/gmail.png";
 import linkedinLogo from "../../assets/linkedin.png";
@@ -10,15 +10,11 @@ const Contact = () => {
   return (
     <Box
       id="contact"
-      background={"#141E24"}
+      background={"#1a1a1a"}
       color={"#9FDBE9"}
       fontSize={{ base: "24px", lg: "32px" }}
     >
-      <Box
-        borderLeft={"5px solid #5781c9"}
-        borderRight={"5px solid #5781c9"}
-        margin={{ base: "2rem", lg: "2rem 20rem 2rem 20rem" }}
-      >
+      <Box margin={{ base: "2rem", lg: "2rem 20rem 2rem 20rem" }}>
         <Box
           display={"flex"}
           justifyContent={"center"}

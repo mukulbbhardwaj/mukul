@@ -14,30 +14,10 @@ const theme = extendTheme({
   },
 });
 
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <Main />,
-//   },
-//   {
-//     path: "/about",
-//     element:<About/>,
-//   },
-//   {
-//     path: "/work",
-//     element:<Work/>,
-//   },
-//   {
-//     path: "/contact",
-//     element:<Contact/>
-//   }
-// ]);
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
-      {/* <RouterProvider router={router} /> */}
       <App/>
     </ChakraProvider>
   </React.StrictMode>

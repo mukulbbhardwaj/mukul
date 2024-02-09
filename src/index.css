@@ -3,14 +3,14 @@
 
 
 html{
-   background: #000000;
+   background: #1a1a1a;
    scroll-behavior: smooth;
 }
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #141E24;
+  background-color: #1a1a1a;
  font-family: 'Rammetto One', sans-serif;
 
 

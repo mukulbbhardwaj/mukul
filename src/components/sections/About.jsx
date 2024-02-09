@@ -1,13 +1,11 @@
-import { Box, Button, Text, Link } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import React from "react";
 
 const About = () => {
-  const resumeLink =
-    "https://drive.google.com/file/d/1_GaM8fHMNrFqw0FhvxupZdtEuZ2a-Q_v/view";
   const aboutData =
     "Hey there, I'm Mukul Bhardwaj , a fresh engineering graduate with an interest in programming and software development. Currently I do Frontend Web Development and learning Backend.";
   return (
-    <Box background={"#141E24"} color={"#9FDBE9"} id="about">
+    <Box id="about">
       <Box
         margin={{ base: "2rem", lg: "2rem 20rem 2rem 20rem" }}
         borderTop={"1px solid gray"}

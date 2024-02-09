@@ -4,7 +4,7 @@ import BlogItem from "./BlogItem";
 import { blogs } from "./blogData";
 const Blogs = () => {
   return (
-    <Box background={"#141E24"} color={"#9FDBE9"} id="blogs">
+    <Box color={"#9FDBE9"} id="blogs">
       <Box
         margin={{ base: "2rem", lg: "2rem 20rem 2rem 20rem" }}
         borderTop={"1px solid gray"}
