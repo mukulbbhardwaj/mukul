@@ -9,7 +9,7 @@ export const projectData = [
   {
     title: "Monke Finance",
     desc: "Experience Financial Growth through Virtual Trading and Insights.",
-    live: "https://monke-finance-web.vercel.app/",
+    live: "https://monkefinance.vercel.app/",
     git: "https://github.com/mukulbbhardwaj/monkeFinance-web",
     tech: "TypeScript, Express, PostgreSQL, Node",
   },
